@@ -26,11 +26,18 @@ class multiplyTestcase(unittest,testcase):
 
      self.assertEqual(result, 22)
 
-   def test_5(self):
+   def test_6(self):
 
-     result = multiplication(-1,-1)
+     result = multiplication(0,-1)
 
-     self.assertEqual(result, 1)
+     self.assertEqual(result, 0)
+
+    def test_7(self):
+
+     result = multiplication(-3,-3)
+
+     self.assertEqual(result, 9)
+
 
 if __name__ == '__main__'
     unittest.main()
